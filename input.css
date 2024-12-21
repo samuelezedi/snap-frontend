@@ -1,0 +1,52 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    *{
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        font-family: 'Epilogue', sans-serif;  /* Apply the font globally */
+    }
+
+    @import url('https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&display=swap');
+}
+
+p {
+    font-size: 18px;
+}
+
+.dropdown-active {
+    transform: translateY(0px);
+}
+
+/* Hamburger */
+.hamburger {
+    cursor: pointer;
+    width: 24px;
+    height: 24px;
+    transition: all 0.25s;
+    position: relative;
+  }
+  
+  .hamburger-top,
+  .hamburger-middle,
+  .hamburger-bottom {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 32px;
+    height: 2px;
+  background-color: #000;
+  transform: rotate(0);
+  transition: all 0.5s;
+  }
+  
+  .hamburger-middle {
+      transform: translateY(7px);
+   }
+  
+   .hamburger-bottom {
+      transform: translateY(14px);
+   }

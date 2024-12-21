@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snap</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+
+    <!-- Main Body Section -->
+    <div id="body-section-div" class="relative h-screen">
+        <!-- Body Section -->
+        <div id="main-content" class="absolute flex flex-col max-w-full md:w-full mx-auto z-0 ">
+
+            <!-- Mobile Navigation bar -->
+            <div class="flex items-start justify-between p-6 md:hidden">
+                <!-- Logo -->
+                <img src="img/logo.svg" alt="snap">
+                <!-- Hamburger Icon -->
+                <button id="menu-btn" class="relative block hamburger md:hidden focus:outline-none">
+                    <span class="hamburger-top"></span>
+                    <span class="hamburger-middle"></span>
+                    <span class="hamburger-bottom"></span>
+                </button>
+            </div>
+
+            <div class="hidden md:block relative container mx-auto p-6 z-0">
+                <!-- Flex Container Desktop Menu  -->
+                <div class="hidden md:flex items-center justify-between">
+                    <!-- Logo & Navigation Flex  -->
+                    <div class="flex items-start justify-between">
+                        <!-- Logo -->
+                        <img src="img/logo.svg" class="mr-10 " alt="">
+                        <div class="hidden md:flex space-x-6 text-mediumGray text-xs">
+                            <!-- Link With dropdown 1 -->
+                            <div class="dropdown-menu relative flex items-center justify-between">
+                                <a href="#" class="hover:text-almostBlack mr-2">Features</a>
+                                <img src="img/icon-arrow-down.svg" class="menu-down-arrow" alt="">
+                                <img src="img/icon-arrow-up.svg" class="menu-up-arrow text-almostBlack hidden" alt="">
+
+                                <!-- Dropdown container -->
+                                <div
+                                    class="dropdown-menu-item hidden absolute flex-col rounded-md shadow-2xl bg-almostWhite top-4 right-1 p-4 pt-7 w-28">
+                                    <ul class="list-none space-y-2">
+                                        <li class="flex items-center cursor-pointer ">
+                                            <img src="img/icon-todo.svg" class="mr-2  w-3" alt="">
+                                            <a href="#">Todo list</a>
+                                        </li>
+                                        <li class="flex items-center justify-start cursor-pointer">
+                                            <img src="img/icon-calendar.svg" class="mr-2 w-3" alt="">
+                                            <a href="#">Calendar</a>
+                                        </li>
+                                        <li class="flex items-center justify-start cursor-pointer">
+                                            <img src="img/icon-reminders.svg" class="mr-2  w-3" alt="">
+                                            <a href="#">Reminder</a>
+                                        </li>
+                                        <li class="flex items-center justify-start cursor-pointer">
+                                            <img src="img/icon-planning.svg" class="mr-2  w-3" alt="">
+                                            <a href="#">Planning</a>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                            </div>
+
+                            <!-- Link With dropdown 2 -->
+                            <div class="dropdown-menu relative flex items-center justify-between">
+                                <a href="#" class="hover:text-almostBlack mr-2">Company </a>
+                                <img src="img/icon-arrow-down.svg" class="menu-down-arrow" alt="">
+                                <img src="img/icon-arrow-up.svg" class="menu-up-arrow text-almostBlack hidden" alt="">
+
+                                <!-- Dropdown container -->
+                                <div
+                                    class="dropdown-menu-item absolute hidden flex-col rounded-md shadow-2xl bg-almostWhite top-4 right-1 p-4 pt-7 w-28">
+                                    <ul class="list-none space-y-2">
+                                        <li class="flex items-center cursor-pointer ">
+                                            <a href="#">History</a>
+                                        </li>
+                                        <li class="flex items-center justify-start cursor-pointer">
+                                            <a href="#">Our Team</a>
+                                        </li>
+                                        <li class="flex items-center justify-start cursor-pointer">
+                                            <a href="#">Block</a>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                            </div>
+                            <!-- Other links -->
+                            <a href="#" class="hover:text-almostBlack cursor-pointer">Careers</a>
+                            <a href="#" class="hover:text-almostBlack cursor-pointer">About</a>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Navigation Buttons -->
+                    <div class="hidden md:flex items-center justify-start space-x-8">
+                        <a href="#" class="text-mediumGray text-xs hover:text-almostBlack ">Login</a>
+                        <a href="#"
+                            class="rounded-xl p-2 px-4 border-2 text-mediumGray text-xs baseline border-1 border-mediumGray hover:text-almostBlack hover:border-almostBlack">
+                            Register
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- End of Navigation section  -->
+
+
+            <!-- Hero Section -->
+            <div id="hero-section" class="flex flex-col-reverse md:flex-row md:items-start pt-4 md:w-full md:mx-auto ">
+                <div class="flex flex-col md:ml-32 md:mr-32 md:justify-center">
+                    <!-- H1 -->
+                    <h1 class="pt-10 text-almostBlack font-bold text-4xl text-center md:text-start md:text-7xl">Make <br class="hidden md:block"> remote work</h1>
+                    <!-- P text -->
+                    <p class="pt-6 px-8 text-center text-mediumGray md:text-start md:px-0  md:mr-36 md:pt-10 md:text-md ">
+                        Get your team in sync, no matter your location. Streamline processes,
+                        create team rituals, and watch productivity soar.
+                    </p>
+                    <!-- Learn more button -->
+                     <div class="mx-auto mt-8 md:flex md:justify-between md:mx-0 md:pt-6">
+                        <a href="#"
+                        class="text-almostWhite font-bold bg-almostBlack  py-4 px-8 text-center rounded-2xl border-almostBlack border-2 md:hover:bg-almostWhite md:hover:text-almostBlack md:hover:border-almostBlack md:hover:border-2 ">Learn
+                        more</a>
+                     </div>
+                    
+                    <!-- Images -->
+                    <div class="flex items-center justify-between py-14 px-5 md:mr-36 ">
+                        <img src="img/client-databiz.svg" class="max-w-16" alt="">
+                        <img src="img/client-audiophile.svg" class="max-w-16" alt="">
+                        <img src="img/client-meet.svg" class="max-w-16" alt="">
+                        <img src="img/client-maker.svg" class="max-w-16" alt="">
+                    </div>
+
+                </div>
+                <!-- Image -->
+                 <div class="md:hidden">
+                    <img src="img/image-hero-mobile.png" alt="">
+                 </div>
+
+                 <div class="hidden md:block md:mr-52 w-1/2 h-1/2 ml-0 object-contain object-center">
+                    <img src="img/image-hero-desktop.png" alt="">
+                 </div>
+            </div>
+        </div>
+
+        <!-- Dark Overlay when sidebar is open -->
+        <div id="overlay" class="hidden fixed inset-0 bg-almostBlack opacity-50 z-10 overflow-hidden">
+        </div>
+
+        <!-- Sidebar  -->
+        <div id="sidebar"
+            class="hidden w-2/3 fixed right-0 top-0 bottom-0  bg-almostWhite z-20 pl-5 pr-5 text-mediumGray h-screen overflow-y-scroll transition-transform duration-300 ease-in-out">
+            <div class="flex flex-col">
+                <!-- Close btn  -->
+                <img src="img/icon-close-menu.svg" class=" max-w-6 ml-auto mt-5 mr-5 mb-5 cursor-pointer"
+                    id="close-sidebar-btn" alt="">
+                <!-- Link 1 -->
+                <div class="flex flex-col mobile-dropdown-menu py-4 ">
+                    <a href="#" class="flex items-center justify-start space-x-4">
+                        <span>Features</span>
+                        <img src="img/icon-arrow-down.svg" class="mobile-menu-down-arrow" alt="">
+                        <img src="img/icon-arrow-up.svg" class="hidden mobile-menu-up-arrow" alt="">
+                    </a>
+                    <div class="hidden flex-col pt-6 mobile-dropdown-menu-list pl-6">
+                        <ul class="space-y-6">
+                            <li class="flex items-center justify-start space-x-4 h-4 cursor-pointer">
+                                <img src="img/icon-todo.svg" alt="">
+                                <span>Todo List</span>
+                            </li>
+                            <li class="flex items-center justify-start space-x-4 h-4 cursor-pointer">
+                                <img src="img/icon-calendar.svg" alt="">
+                                <span>Calendars</span>
+                            </li>
+                            <li class="flex items-center justify-start space-x-4 h-4 cursor-pointer">
+                                <img src="img/icon-reminders.svg" alt="">
+                                <span>Reminders</span>
+                            </li>
+                            <li class="flex items-center justify-start space-x-4 h-4 cursor-pointer">
+                                <img src="img/icon-planning.svg" alt="">
+                                <span>Planning</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Link 2 -->
+                <div class="flex flex-col mobile-dropdown-menu ">
+                    <a href="#" class="flex items-center justify-start space-x-4">
+                        <span>Company</span>
+                        <img src="img/icon-arrow-down.svg" class="mobile-menu-down-arrow" alt="">
+                        <img src="img/icon-arrow-up.svg" class="hidden mobile-menu-up-arrow" alt="">
+                    </a>
+                    <div class="hidden flex-col pt-6 mobile-dropdown-menu-list pl-6">
+                        <ul class="space-y-6">
+                            <li class="items-center justify-start cursor-pointer">
+                                <span>Blog</span>
+                            </li>
+                            <li class="items-center justify-start cursor-pointer">
+
+                                <span>Our team</span>
+                            </li>
+                            <li class="items-center justify-start cursor-pointer">
+                                <span>Blog</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Link 3 -->
+                <div class="relative flex items-center justify-start space-x-4 pt-5">
+                    <a href="#">Careers</a>
+
+                </div>
+
+                <!-- Link 4 -->
+                <div class="relative flex items-center justify-start space-x-4 pt-5">
+                    <a href="#">About</a>
+                </div>
+
+
+                <a href="#" class="text-mediumGray hover:text-almostBlack pt-6 text-center text-sm">Login</a>
+                <a href="#"
+                    class="rounded-xl p-2  px-4 mt-4 border-2 text-mediumGray text-center text-sm baseline border-1 border-mediumGray hover:text-almostBlack hover:border-almostBlack">
+                    Register
+                </a>
+
+
+            </div>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
